@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selamat Datang di Website RSD Gunung Jati Kota Cirebon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMG/logorsgj.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="IMG/slider1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="IMG/slider2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="IMG/slider3.jpg" style="width:100%">
+                </div>
+
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tentang Kami
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="form_kamar.html">SEJARAH</a>
+                    <a href="#">VISI & MISI</a>
+                </div>
+            </div>
+            <a href="#">Layanan</a>
+            <a href="#">Galery</a>
+            <a href="#">BPJS Kesehatan</a>
+            <a href="#">Antrian</a>
+            <a href="#">Contact Person</a>
+            <a href="formtabel.html">Form & Tabel</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div class="form">
+            <h3>Form Input Data Dokter</h3>
+            <form action="POST">
+                <label for="">NIK Dokter :</label>
+                <input type="number" placeholder="Masukan Nama Depan Anda" required required class="inputan">
+                <label for="">Nama Dokter :</label>
+                <input type="text" placeholder="Masukan Nama Belakang Anda" required class="inputan">
+                <label for="">Jenis Kelamin </label>
+                <input type="checkbox" name="Laki-Laki"> Laki-Laki
+                <input type="checkbox" name="Perempuan"> Perempuan
+                <select name="pilih" id="agama" required class="inputan">
+                    <option value="#">----------- Pendidikan -----------</option>
+                    <option value="SMA">SMA</option>
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                </select>
+                <label for="">Alamat :</label>
+                <textarea class="inputan-area"></textarea>
+                <label for="">Upload Image :</label>
+                <br>
+                <input type="file" name="" id="">
+                <p></p>
+                <center>
+                    <input type="submit" value="Simpan" class="btn">
+                    <input type="reset" value="Batal" class="btn">
+                </center>
+            </form>
+        </div>
+
+        <div class="tabel">
+            <h3>RUMAH SAKIT UMUM DAERAH GUNUNG JATI CIREBON</h3>
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th rowspan="2">No.</th>
+                        <th rowspan="2">NIK Dokter</th>
+                        <th rowspan="2">Nama Dokter</th>
+                        <th rowspan="2">Gender</th>
+                        <th colspan="3">Pendidikan</th>
+                        <th rowspan="2">Action</th>
+                    </tr>
+
+                    <tr style="background-color: skyblue; color: white;">
+                        <td>SMA</td>
+                        <td>S1</td>
+                        <td>S2</td>
+                    </tr>
+
+                    <tr>
+                        <td>1.</td>
+                        <td>12345</td>
+                        <td>Dokter 1</td>
+                        <td>Perempuan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><button class="btn-action">Action</button></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>12364</td>
+                        <td>Dokter 2</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><button class="btn-action">Action</button></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>12387</td>
+                        <td>Dokter 3</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><button class="btn-action">Action</button></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>12317</td>
+                        <td>Dokter 4</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><button class="btn-action">Action</button></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>12387</td>
+                        <td>Dokter 5</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><button class="btn-action">Action</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p align="center">Copyright &copy; 2020 Apriansyah Rizqi Setiawan (2019111013) - MI-WP 1/2</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2700);
+        }
+    </script>
+</body>
+
+</html>

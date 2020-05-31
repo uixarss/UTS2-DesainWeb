@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Selamat Datang di Website RSD Gunung Jati Kota Cirebon</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="IMG/logorsgj.png">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="IMG/slider1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="IMG/slider2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="IMG/slider3.jpg" style="width:100%">
+                    </div>
+
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tentang Kami
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="form_kamar.html">SEJARAH</a>
+                        <a href="#">VISI & MISI</a>
+                    </div>
+                </div>
+                <a href="#">Layanan</a>
+                <a href="#">Galery</a>
+                <a href="#">BPJS Kesehatan</a>
+                <a href="#">Antrian</a>
+                <a href="#">Contact Person</a>
+                <a href="formtabel.html">Form & Tabel</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <div class="middle">
+                <h3>RUMAH SAKIT UMUM DAERAH GUNUNG JATI CIREBON</h3>
+                <img src="IMG/slider1.jpg" alt="gambar cuk" style="float: left; width:50%; margin-right: 15px;">
+                <p>Pemenuhan kebutuhan informasi merupakan hak setiap anggota masyarakat.
+                    Undang-Undang No. 14 Tahun 2008
+                    tentang Keterbukaan Informasi Publik memberikan kewajiban kepada setiap Badan Publik untuk membuka
+                    akses
+                    bagi yang memerlukan dengan beberapa pengecualian melalui mekanisme yang sesuai dengan peraturan
+                    perundangan. RSUD Gunung jati Kota Cirebon sebagai badan publik juga berkewajiban memberikan
+                    informasi
+                    yang diperlukan oleh masyarakat. Salah satu upaya RSUD Gunung Jati Kota Cirebon untuk menyediakan
+                    informasi adalah melalui penerbitan Website RSUD Gunung Jati. Website RSUD Gunung Jati ini
+                    diharapkan
+                    dapat menyediakan beberapa informasi yang diperlukan masyarakat, walaupun dalam ruang lingkup yang
+                    terbatas. Tentu bukan hal yang mudah untuk menerbitkan sebuah website di tengah-tengah kesibukan
+                    redaksi
+                    dalam mengerjakan tugas-tugas di rumah sakit. Tetapi dengan semangat dan kerja keras, Alhamdulillah
+                    Website RSUD Gunung Jati ini dapat diterbitkan. Kami mengucapkan terima kasih kepada tim redaksi
+                    yang
+                    telah membidani lahirnya website ini, serta kepada semua pihak yang telah membantu redaksi.</p>
+                <p>
+                    <a href="">Baca Selanjutnya</a>
+                </p>
+            </div>
+
+            <div class="right">
+                <h3>Foto Pribadi</h3>
+                <img src="IMG/apri.jpeg" alt="" style="width: 100%;">
+            </div>
+
+            <div class="right">
+                <h3>Kuisoner</h3>
+                <ul>
+                    <li><a href="">Laporan Data Dokter</a></li>
+                    <li><a href="">Laporan Data Pasien</a></li>
+                    <li><a href="">Laporan Data Obat</a></li>
+                    <li><a href="">Laporan Data Karyawana</a></li>
+                    <li><a href="">Data Lokasi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p align="center">Copyright &copy; 2020 Apriansyah Rizqi Setiawan (2019111013) - MI-WP 1/2</p>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2700);
+            }
+        </script>
+    </body>
+
+    </html>
